@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+@media (max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (max-width:425px){
+    html{
+        font-size: 35%;
+    }
+}
+
+@media (max-width:375px){
+    html{
+        font-size: 30%;
+    }
+}
+@media (max-width:320px){
+    html{
+        font-size: 20%;
+    }
+}
+
+
+.bgc{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball1{
+    height: 5rem;
+    width: 5rem;
+    background-color: red;
+    border-radius: 50%;
+    animation: 2s ball infinite linear;
+}
+
+.ball2{
+    height: 5rem;
+    width: 5rem;
+    background-color: blue;
+    border-radius: 50%;
+    animation: 2s ball infinite linear;
+    animation-delay: 0.5s;
+}
+
+.ball3{
+    height: 5rem;
+    width: 5rem;
+    background-color: green;
+    border-radius: 50%;
+    animation: 2s ball infinite linear;
+    animation-delay: 1s;
+}
+.ball4{
+    height: 5rem;
+    width: 5rem;
+    background-color: blue;
+    border-radius: 50%;
+    animation: 2s ball infinite linear;
+    animation-delay: 1.5s;
+}
+.ball5{
+    height: 5rem;
+    width: 5rem;
+    background-color: red;
+    border-radius: 50%;
+    animation: 2s ball   infinite linear;  
+    animation-delay: 2s;
+}
+
+@keyframes ball{
+    0%{
+        position: relative;
+        bottom: 0;
+    }
+
+    50%{
+        position: relative;
+        bottom: 20rem;
+    }
+    100%{
+        position: relative;
+        bottom: 0;
+    }
+
+}
+
+
+.balls{
+    display: flex;
+    gap: 5rem;
+}
+
+.border{
+    height: 1rem;
+    width: 50rem;
+    background-color: #fff;
+    position: relative;
+    right: 2.5rem;
+}
